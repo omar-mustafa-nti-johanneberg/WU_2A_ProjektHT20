@@ -55,13 +55,31 @@
 
 #bilder {
      color: white;
+     text-decoration: none;
 }
 
 #om_oss {
      color: white;
+     text-decoration: none;
 }
 
 #kontakt {
      color: white;
+     text-decoration: none;
+}
+
+#bilder:hover {
+     color: red;
+     text-decoration: none;
+}
+
+#om_oss:hover {
+     color: red;
+     text-decoration: none;
+}
+
+#kontakt:hover {
+     color: red;
+     text-decoration: none;
 }
 
