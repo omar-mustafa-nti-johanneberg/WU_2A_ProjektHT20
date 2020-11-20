@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#flexwrapper {
+     display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40px 100px 1fr 125px 75px;
+    gap: 0px 0px;
+    grid-template-areas:
+      "he he he"
+      "na na na"
+      "as2 ma as1"
+      "se se se"
+      "fo fo fo";
+  }
+.he { 
+     grid-area: he;
+     background-color: rgb(100, 3, 100);
+     color: white;
+     text-align: center;
+}
+
+.na {
+     grid-area: na;
+     background-color: rgb(59, 2, 59);
+     color: white;
+     text-align: center;
+}
+
+.ma {
+     grid-area: ma; 
+}
+
+.as1 {
+     grid-area: as1; 
+}
+
+.as2 {
+     grid-area: as2;
+ }
+
+.se {
+     grid-area: se; 
+}
+
+.fo { 
+     grid-area: fo; 
+}
+
+#bilder {
+     color: white;
+}
+
+#om_oss {
+     color: white;
+}
+
+#kontakt {
+     color: white;
+}
+
