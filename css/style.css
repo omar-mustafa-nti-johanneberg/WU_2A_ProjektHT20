@@ -3,14 +3,10 @@
     padding: 0;
 }
 
-#flexwrapper {
-     display: flex;
-}
-
-.grid-container {
+.grid_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40px 100px 1fr 125px 75px;
+    grid-template-rows: 40px 100px 200px 200px 100px;
     gap: 0px 0px;
     grid-template-areas:
       "he he he"
@@ -19,6 +15,7 @@
       "se se se"
       "fo fo fo";
   }
+
 .he { 
      grid-area: he;
      background-color: rgb(100, 3, 100);
@@ -35,51 +32,40 @@
 
 .ma {
      grid-area: ma; 
+     background-color: lightcoral;
 }
 
 .as1 {
-     grid-area: as1; 
+     grid-area: as1;
+     background-color: lightgreen; 
 }
 
 .as2 {
      grid-area: as2;
+     background-color: lightseagreen;
  }
 
 .se {
      grid-area: se; 
+     background-color: lightblue;
 }
 
 .fo { 
      grid-area: fo; 
+     background-color: orange;
 }
 
-#bilder {
-     color: white;
+.a_taggar {
+     color: green ;
      text-decoration: none;
 }
 
-#om_oss {
-     color: white;
-     text-decoration: none;
-}
-
-#kontakt {
-     color: white;
-     text-decoration: none;
-}
-
-#bilder:hover {
+.a_taggar:hover {
      color: red;
-     text-decoration: none;
 }
 
-#om_oss:hover {
-     color: red;
-     text-decoration: none;
-}
 
-#kontakt:hover {
-     color: red;
-     text-decoration: none;
+#ul_index {
+     
 }
 
