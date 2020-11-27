@@ -56,8 +56,10 @@
 }
 
 .a_taggar {
-     color: green ;
+     color: white ;
      text-decoration: none;
+     font-size: 20px;
+     justify-content: space-between;
 }
 
 .a_taggar:hover {
@@ -65,7 +67,20 @@
 }
 
 
-#ul_index {
-     
+#ul_1_index  {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     list-style-type: none;
 }
+
+#ul_2_index {
+     display: flex;
+     
+     justify-content: space-around;
+     align-items: center;
+     list-style-type: none;
+}
+
 
