@@ -23,7 +23,7 @@
 
     <h2>1. Idébeskrivning</h2>
     <!-- Vad ska du göra? Vilken är din målgrupp? Om du utvecklar en tidigare sida; Vad ska du förändra/utveckla? -->
-    Vår målgruppen är för människor som tycker om att äta kebab. Målgruppen vi siktar på är specifikt personer mellan 25-40 års åldern, dock är alla välkomna att äta. 
+    Vår målgruppen är för människor som tycker om att äta kebab. Målgruppen vi siktar på är specifikt personer mellan 25-40 års åldern.
     
 
     <h2>2. Planering</h2>
@@ -33,9 +33,10 @@
     Här är en bild på en skiss på den första sidan, alltså hemsidan: <br> 
     <img src="/misc/Skiss.png" alt="Bild på skiss" width="600px" height="300px"> <br>
     De semantiska taggarna som ska användas syns på skissen. Den första sidan ska vara för att man ska kunna navigera till andra sidor på projektet samt få information om adresser, priser osv. <br>
-    Här är en skärmbild på webbläsaren Firefox som visar översiktligt hur grid-layouten ska vara (för hemsidan): <br> <img src="/misc/Firefox_screenshot.png" alt="Bild på grid-layouten i Firefox" width="600px" height="300px">
+    Här är en skärmbild på webbläsaren Firefox som visar översiktligt hur grid-layouten ska vara (för hemsidan): <br> <img src="/misc/firefox_screenshot.png" alt="Bild på grid-layouten i Firefox" width="600px" height="300px">
     <br> Info om grid-layouten: <br>
-    Det är 3x5 grid med en header, en nav, två aside med en main i mitten av de och ett section under de. Längst ner ligger footern.
+    Det är ett grid med en header, en nav, en section, en main (aside bredvid main) under, en section under och längst ner finns footern.
+    <br> Edit: Som man nog märker stämmer skärmbilden inte alls överrens med dokumentationen under vecka 47 och 48, detta eftersom jag valde att ändra på min skiss på layouten mitt i det hela. Hoppas detta förtydligar!
     
 
 
@@ -95,18 +96,19 @@
 
     <h3>Lektioner vecka 47</h3>
     (Torsdag) Github konto har skapats. Byggt skelett till HTML filen, dock behöver jag komma på en idé för layouten. <br> 
-    <br> (Fredag) Layouten för sidan har skapats. Skissen finns dokumenterad. HTML samt CSS grid har börjat fyllas på. Länkar till de andra HTML har även skapats som a taggar. Ett problem jag dock har är att jag vill ändra positionerna på mina a-taggar på nav-taggen. <br> Här är en bild på hur det ser ut just nu: <br> <img src="/misc/Screenshot.png" alt="Skärmbild" wwidth="600px" height="300px">
+    <br> (Fredag) Layouten för sidan har skapats. Skissen finns dokumenterad. HTML samt CSS grid har börjat fyllas på. Länkar till de andra HTML har även skapats som a taggar. Ett problem jag dock har är att jag vill ändra positionerna på mina a-taggar på nav-taggen. <br> Här är en bild på hur det ser ut just nu: <br> 
+    <img src="/misc/Screenshot.png" alt="Skärmild på sidan" width="600px" height="300px">
 
 
     <h3>Lektioner vecka 48</h3>
-    (Torsdag) Skiss på andra sidor påbörjas, classer och id har tilldelats för att kunna tillämpa alla style-ändringar i endast ett CSS-dokument. Jag har också ändrat mina taggar i mitt HTML dokument från massa div-taggar till passande semantiska taggar såsom header, nav, main, aside footer osv. Jag har även förstått att jag måste använda mig av flex för att ändra positionen på mina a-taggar. <br> Här är en bild på hur sidan ser ut just nu i google-chrome: <br> <img src="/misc/screenshot_26_november.png" alt="Bild på hur sidan ser ut just nu" width="600px" height="300px"> <br> 
-    <br> (Fredag) Jag har lagt min ul tagg som flex-förälder så att jag kan ändra den horisontella positionen av mina länkar på navigationsystemet. <br> Ett problem jag dock har stött på är att min flex-förälder endast tar en del av höjden i navigationssystemet. Det röda i bilden är flex-föräldern och hela det lila är navigationssystemet. <br> Här är en bild som förklarar det jag vill förmedla: <br> <img src="/misc/Screenshot_27_november.png" alt="Förklarande bild" width="600px" height="300px">
-    <br> Jag lyckades lösa det, med en google sökning fick jag fram att jag ska lägga styligen "height: 100%;" för att få flex-föräldern så att den täcker hela navigationssystemet. <br> Nu ser det sidan ut såhär: <br> <img src="/misc/screenshot_27_november_2.png" alt="Förklarande bild" width="600px" height="300px"> <br>
+    (Torsdag) Skiss på andra sidor påbörjas, classer och id har tilldelats för att kunna tillämpa alla style-ändringar i endast ett CSS-dokument. Jag har också ändrat mina taggar i mitt HTML dokument från massa div-taggar till passande semantiska taggar såsom header, nav, main, aside footer osv. Jag har även förstått att jag måste använda mig av flex för att ändra positionen på mina a-taggar. <br> Här är en bild på hur sidan ser ut just nu i google-chrome: <br> <img src="/misc/screenshot_26_november.png" alt="Skärmild på sidan" width="600px" height="300px"> <br> 
+    <br> (Fredag) Jag har lagt min ul tagg som flex-förälder så att jag kan ändra den horisontella positionen av mina länkar på navigationsystemet. <br> Ett problem jag dock har stött på är att min flex-förälder endast tar en del av höjden i navigationssystemet. Det röda i bilden är flex-föräldern och hela det lila är navigationssystemet. <br> Här är en bild som förklarar det jag vill förmedla: <br> <img src="/misc/Screenshot_27_november.png" alt="Skärmild på sidan" width="600px" height="300px">
+    <br> Jag lyckades lösa det, med en google sökning fick jag fram att jag ska lägga styligen "height: 100%;" för att få flex-föräldern så att den täcker hela navigationssystemet. <br> Nu ser det sidan ut såhär: <br> <img src="/misc/screenshot_27_november_2.png" alt="Skärmild på sidan" width="600px" height="300px"> <br>
     Jag har också skapat skelett för de andra två sidorna på sidan. Nästa vecka ska fokuset ligga på att fylla med innehåll på hemsidan eftersom det är i princip helt tomt just nu. <br>
-    (Under helgen) Jag har skapat nya sidor till projektet. Det är sju sidor totalt (inklusive hemsidan). Jag har även snyggat till det med CSS-flex så att a-taggarna   (länkarna) kommer längst till höger på navigationssystemet. När man hovrar över länkarna så blir de "highlightade" med hjälp av CSS (a:hover)-attributen. Två saker som jag ytterligare har stylat är att om man är inne på "kontakt-sidan" så vet man att man är inne i just den sidan eftersom då kommer den länken vara röd-markerad. <br> Här är en bild som visar det jag förklarade: <br> <img src="/misc/screenshot_28_november.png" alt="Förklarande bild" width="600px" height="300px"> <br>
+    (Under helgen) Jag har skapat nya sidor till projektet. Det är sju sidor totalt (inklusive hemsidan). Jag har även snyggat till det med CSS-flex så att a-taggarna   (länkarna) kommer längst till höger på navigationssystemet. När man hovrar över länkarna så blir de "highlightade" med hjälp av CSS (a:hover)-attributen. Två saker som jag ytterligare har stylat är att om man är inne på "kontakt-sidan" så vet man att man är inne i just den sidan eftersom då kommer den länken vara röd-markerad. <br> Här är en bild som visar det jag förklarade: <br> <img src="/misc/screenshot_28_november.png" alt="Skärmild på sidan" width="600px" height="300px"> <br>
     Den andra saken (som man kan se på bilden ovan) är att jag har gjort infogat en bild inne på en a-tagg som ska motsvara hemknappen. När man trycker på den tar man sig till hemsidan. 
     <h3>Lektioner vecka 49</h3>
-    (Torsdag) <br> <br> (Fredag)
+    <br>(Måndag) Jag har (tidigare nämnt i dokumentationen) ändrat på min layout och därför kommer mina skärmbilder se lite annorlunda ut jämfört med dokumentationen vecka 48. Jag har även ändrat bakgrunder på min section och footern och det kommer snart finnas mer innehåll i sidan. Sidan ser ut så här just nu: (skärmbilden är utzoomad, det är kanske därför sidan ser suddig ut.) <br> <img src="/misc/screenshot_30_november.png" alt="Skärmild på sidan" width="600px" height="300px"> <br><br> (Torsdag) <br> <br> (Fredag)
 
     <h3>Lektioner vecka 50</h3>
     (Torsdag) <br> <br> (Fredag)

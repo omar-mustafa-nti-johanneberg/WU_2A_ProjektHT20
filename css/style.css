@@ -4,54 +4,54 @@
 }
 
 .grid_container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 40px 60px 500px 200px 100px;
-    gap: 0;
-    grid-template-areas:
-    "he he he"
-    "na na na"
-    "as2 ma as1"
-    "se se se"
-    "fo fo fo";
-  }
+     display: grid;
+     grid-template-columns: 1fr 0.4fr;
+     grid-template-rows: 50px 100px 500px 200px 200px 100px;
+     gap: 0px 0px;
+     grid-template-areas:
+     "he he"
+     "na na"
+     "se1 se1"
+     "ma as"
+     "se2 se2"
+     "fo fo";
+   }
 
 .he { 
      grid-area: he;
-     background-color: rgb(0, 65, 90);
+     background-color: rgb(1, 32, 44);
      color: white;
      text-align: center;
 }
 
 .na {
      grid-area: na;
-     background-color: rgb(16, 181, 231);
+     background-color: rgb(206, 138, 12);
      color: white;
 }
 
 .ma {
      grid-area: ma; 
-     background-color: lightcoral;
+     background-color: blue;
+}
+.as {
+     grid-area: as;
+     background-color: tomato;
 }
 
-.as1 {
-     grid-area: as1;
-     background-color: lightgreen; 
+.se1 {
+     grid-area: se1; 
 }
 
-.as2 {
-     grid-area: as2;
-     background-color: lightseagreen;
- }
 
-.se {
-     grid-area: se; 
-     background-color: lightblue;
+.se2 {
+     grid-area: se2;
+     background-color: violet;
 }
 
 .fo { 
      grid-area: fo;
-     background-color: orange;
+     background-image: url("https://t4.ftcdn.net/jpg/02/52/16/95/240_F_252169566_0hYhfxzUzQYDYgh231YdAhQDkN9ckdGa.jpg");
 }
 
 .ul_taggar {
