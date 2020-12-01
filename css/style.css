@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+body {
+     background-image: url("https://t4.ftcdn.net/jpg/02/52/16/95/240_F_252169566_0hYhfxzUzQYDYgh231YdAhQDkN9ckdGa.jpg");
+     margin: 0;
+}
+
 .grid_container {
      display: grid;
      grid-template-columns: 1fr 0.4fr;
-     grid-template-rows: 50px 100px 500px 200px 200px 100px;
+     grid-template-rows: 50px 100px 500px 200px 400px 100px;
      gap: 0px 0px;
      grid-template-areas:
      "he he"
@@ -22,21 +27,46 @@
      background-color: rgb(1, 32, 44);
      color: white;
      text-align: center;
+     font-family: sans-serif;
+     padding-top: 5px;
 }
 
-.na {
+.topnav {
      grid-area: na;
-     background-color: rgb(206, 138, 12);
      color: white;
+     overflow: hidden;
+     background-color: #333;
 }
+   
+.topnav a {
+     float: left;
+     color: white;
+     text-align: center;
+     padding: 35px 40px;
+     text-decoration: none;
+     font-size: 25px;
+     font-family: sans-serif;
+   }
+   
+.topnav a:hover {
+     background-color: #ddd;
+     color: black;
+   }
+   
+.topnav a.active {
+     background-color: #f11760;
+     color: white;
+   }
 
 .ma {
      grid-area: ma; 
-     background-color: blue;
+     background-color:rgb(211, 210, 210);
+     margin: 10px;
 }
 .as {
      grid-area: as;
-     background-color: tomato;
+     background-color:rgb(211, 210, 210);
+     margin: 10px;
 }
 
 .se1 {
@@ -46,12 +76,20 @@
 
 .se2 {
      grid-area: se2;
-     background-color: violet;
+     background-color: rgb(211, 210, 210);
+     margin: 10px;
+     color: white;
 }
 
 .fo { 
      grid-area: fo;
      background-image: url("https://t4.ftcdn.net/jpg/02/52/16/95/240_F_252169566_0hYhfxzUzQYDYgh231YdAhQDkN9ckdGa.jpg");
+     background-repeat: repeat-x;
+     display: flex;
+     height: 100%;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
 }
 
 .ul_taggar {
@@ -59,84 +97,18 @@
      height: 100%;
      width: 100%;
      list-style-type: none;
-     justify-content: flex-end;
+     justify-content: flex-start;
      align-items: center;
-     margin: 0 -52px;
 }
 
-.a_taggar {
-     color: white ;
+#dokumentation {
      text-decoration: none;
-     font-size: 20px;
-     margin: 0 5px;
-}
-
-.a_taggar:hover {
-     color: powderblue;
-}
-
-#kontakt {
-     color: red;
-}
-
-#integreringspolicy {
-     color: red;
-}
-
-#om_oss {
-     color: red;
-}
-
-#bilder {
-     color: red;
-}
-
-#kopvillkor {
-     color: red;
+     color: white;
+     font-size: 25px;
+     font-weight: bold;
 }
 
 
-
-
-/* #ul_1_index  {
-     display: flex;
-     height: 100%;
-     width: 100%;
-     list-style-type: none;
-     justify-content: flex-end;
-     align-items: center;
-     margin: 0 -52px;
-}
-
-#ul_2_index {
-     display: flex;
-     height: 100%;
-     width: 100%;
-     list-style-type: none;
-     justify-content: flex-end;
-     align-items: center;
-     margin: 0 -5px;
-} */
-
-/* #ul_1_kontakt  {
-     display: flex;
-     height: 100%;
-     width: 100%;
-     list-style-type: none;
-     justify-content: flex-end;
-     align-items: center;
-     margin: 0 -52px;
-}
-
-#ul_2_kontakt  {
-     display: flex;
-     height: 100%;
-     width: 100%;
-     list-style-type: none;
-     justify-content: flex-end;
-     align-items: center;
-     margin: 0 -52px;
-} */
 
 /* #grid_wrapper_index {
      grid-template-areas:
@@ -155,5 +127,3 @@
      ""
      "" ;
 } */
-
-
