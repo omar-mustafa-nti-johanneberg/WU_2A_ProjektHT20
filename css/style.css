@@ -11,7 +11,7 @@ body {
 .grid_container {
      display: grid;
      grid-template-columns: 1fr 0.4fr;
-     grid-template-rows: 50px 100px 500px 200px 400px 100px;
+     grid-template-rows: 50px 70px 500px 200px 400px 100px;
      gap: 0px 0px;
      grid-template-areas:
      "he he"
@@ -118,6 +118,20 @@ body {
       text-decoration: underline;
 }
 
+
+/* Styling för "Om oss" sidan med CSS */
+#grid_wrapper_om_oss {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 50px 70px 900px 100px;
+     gap: 0px 0px;
+     grid-template-areas:
+       "he"
+       "na"
+       "ar"
+       "fo";
+   }
+
 #article_om_oss {
      background-color: rgb(99, 98, 98);
      margin: 10px 40px 10px 40px;
@@ -132,46 +146,12 @@ body {
      grid-area: fo;
 }
 
-#article_help {
-     margin: 50px;
-     border-radius:10px; 
-     background-color: white; 
-     padding: 30px;
-}
-
-#h1_help {
-     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#help-survey {
-     height: 700px;
-     width: 100%;
-     border: 0;    
-}
-
-#article_bilder {
-     grid-area: ar;
-     background-color: rebeccapurple;
-}
-
-/* Styling för "Om oss" sidan med CSS grid */
-#grid_wrapper_om_oss {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 50px 100px 900px 100px;
-     gap: 0px 0px;
-     grid-template-areas:
-       "he"
-       "na"
-       "ar"
-       "fo";
-   }
 
 /* Styling för "Bilder" sidan med CSS grid */
 #grid_wrapper_bilder {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 50px 100px 500px 100px;
+     grid-template-rows: 50px 70px 500px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
@@ -179,6 +159,16 @@ body {
        "ar"
        "fo";
    }
+
+ #article_bilder {
+     background-color: rgb(99, 98, 98);
+     margin: 10px 40px 10px 40px;
+     border-radius: 10px;
+     padding: 10px;
+     font-size: 25px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: white;
+}  
 
 /* Styling för "hjälp" sidan med CSS grid */
 
@@ -193,3 +183,46 @@ body {
        "ar"
        "fo";
    }
+
+#help-survey {
+     height: 700px;
+     width: 100%;
+     border: 0;    
+}   
+
+#article_help {
+     margin: 10px;
+     margin-top: 20px;
+     border-radius:10px; 
+     background-color: white; 
+     padding: 30px;
+}
+
+#h1_help {
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling för "kontakt" sidan med CSS grid */
+
+#grid_wrapper_kontakt {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 50px 70px 850px 100px;
+     gap: 0px 0px;
+     grid-template-areas:
+       "he"
+       "na"
+       "ar"
+       "fo";
+   }
+
+#article_kontakt {
+     background-color: white;
+     margin: 10px 40px 10px 40px;
+     border-radius: 10px;
+     padding: 10px;
+     font-size: 25px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: black;
+     text-align: center;
+}
