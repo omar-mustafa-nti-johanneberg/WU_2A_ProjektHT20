@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,27 +9,13 @@ body {
      margin: 0;
 }
 
-.grid_container {
-     display: grid;
-     grid-template-columns: 1fr 0.4fr;
-     grid-template-rows: 50px 70px 500px 200px 400px 100px;
-     gap: 0px 0px;
-     grid-template-areas:
-     "he he"
-     "na na"
-     "se1 se1"
-     "ma as"
-     "se2 se2"
-     "fo fo";
-   }
-
 .he { 
      grid-area: he;
      background-color: rgb(1, 32, 44);
      color: white;
-     text-align: center;
      font-family: sans-serif;
-     padding-top: 5px;
+     padding-top: 15px;        
+     text-align: center;
 }
 
 /* Styling för navigationsystemet */
@@ -47,27 +34,24 @@ body {
      text-decoration: none;
      font-size: 25px;
      font-family: sans-serif;
-   }
+}
    
 .topnav a:hover {
      background-color: #ddd;
      color: black;
-   }
+}
    
 .topnav a.active {
      background-color: #f11760;
      color: white;
-   }
+}
 
 .ma {
      grid-area: ma; 
-     background-color:rgb(211, 210, 210);
-     margin: 10px;
 }
+
 .as {
      grid-area: as;
-     background-color:rgb(211, 210, 210);
-     margin: 10px;
 }
 
 .article {
@@ -78,12 +62,13 @@ body {
      grid-area: se1; 
 }
 
-
-.se2 {
-     grid-area: se2;
-     background-color: rgb(211, 210, 210);
-     margin: 10px;
-     color: white;
+.ul_taggar {
+     display: flex;
+     height: 100%;
+     width: 100%;
+     list-style-type: none;
+     justify-content: flex-start;
+     align-items: center;
 }
 
 /* Styling för footern */
@@ -98,15 +83,6 @@ body {
      align-items: center;
 }
 
-.ul_taggar {
-     display: flex;
-     height: 100%;
-     width: 100%;
-     list-style-type: none;
-     justify-content: flex-start;
-     align-items: center;
-}
-
 #dokumentation {
      text-decoration: none;
      color: white;
@@ -118,12 +94,86 @@ body {
       text-decoration: underline;
 }
 
+/* Styling för "index" sidan med CSS */
+
+#grid_wrapper_index {
+     display: grid;
+     grid-template-columns: 1fr 0.5fr;
+     grid-template-rows: 70px 70px 500px 300px 400px 100px;
+     gap: 0px 0px;
+     grid-template-areas:
+     "he he"
+     "na na"
+     "se1 se1"
+     "ma as"
+     "se2 se2"
+     "fo fo";
+   }
+
+#section_1_bild_index {
+     height: 480px;
+     width: 97%;
+     margin: 14px;
+     border-radius: 10px;
+}
+
+#main_index {
+     background-color:rgb(211, 210, 210);
+     margin: 10px;
+     border-radius: 10px;
+}   
+
+#aside_index {
+     background-color:rgb(211, 210, 210);
+     margin: 10px;
+     border-radius: 10px;
+     padding: 10px;
+}   
+
+#section_2_index {
+     grid-area: se2;
+     background-color: rgb(211, 210, 210);
+     margin: 10px;
+     border-radius: 10px;
+     padding: 10px;
+}
+
+#section_2_index p {
+     font-size: 20px;
+}
+
+/* Styling för "Bilder" sidan med CSS grid */
+#grid_wrapper_bilder {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 70px 70px 900px 100px;
+     gap: 0px 0px;
+     grid-template-areas:
+       "he"
+       "na"
+       "ar"
+       "fo";
+   }
+
+ #flex_parent_bilder {
+     display: flex;
+     background-color: rgb(99, 98, 98);
+     margin: 10px 40px 10px 40px;
+     border-radius: 10px;
+     flex-wrap: wrap;
+     
+}  
+
+#flex_child {
+
+}
 
 /* Styling för "Om oss" sidan med CSS */
+
 #grid_wrapper_om_oss {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 50px 70px 900px 100px;
+     grid-template-rows: 70px 70px 900px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
@@ -146,36 +196,12 @@ body {
      grid-area: fo;
 }
 
-
-/* Styling för "Bilder" sidan med CSS grid */
-#grid_wrapper_bilder {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: 50px 70px 500px 100px;
-     gap: 0px 0px;
-     grid-template-areas:
-       "he"
-       "na"
-       "ar"
-       "fo";
-   }
-
- #article_bilder {
-     background-color: rgb(99, 98, 98);
-     margin: 10px 40px 10px 40px;
-     border-radius: 10px;
-     padding: 10px;
-     font-size: 25px;
-     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     color: white;
-}  
-
 /* Styling för "hjälp" sidan med CSS grid */
 
 #grid_wrapper_help {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 50px 70px 930px 100px;
+     grid-template-rows: 70px 70px 930px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
@@ -191,8 +217,7 @@ body {
 }   
 
 #article_help {
-     margin: 10px;
-     margin-top: 20px;
+     margin: 10px 40px 10px 40px;
      border-radius:10px; 
      background-color: white; 
      padding: 30px;
@@ -207,7 +232,7 @@ body {
 #grid_wrapper_kontakt {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 50px 70px 850px 100px;
+     grid-template-rows: 70px 70px 850px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
