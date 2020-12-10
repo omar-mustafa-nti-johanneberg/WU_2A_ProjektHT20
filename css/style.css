@@ -153,18 +153,18 @@ body {
        "na"
        "ar"
        "fo";
-   }
+}
 
- #flex_parent_bilder {
+#flex_parent_bilder {
      display: flex;
      background-color: rgb(99, 98, 98);
      margin: 10px 40px 10px 40px;
      border-radius: 10px;
      flex-wrap: wrap;
-     
 }  
 
 #flex_child {
+     
 
 }
 
