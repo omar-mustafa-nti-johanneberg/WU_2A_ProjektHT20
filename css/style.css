@@ -6,7 +6,6 @@
 
 body {
      background-image: url("https://t4.ftcdn.net/jpg/02/52/16/95/240_F_252169566_0hYhfxzUzQYDYgh231YdAhQDkN9ckdGa.jpg");
-     margin: 0;
 }
 
 .he { 
@@ -99,7 +98,7 @@ body {
 #grid_wrapper_index {
      display: grid;
      grid-template-columns: 1fr 0.5fr;
-     grid-template-rows: 70px 70px 500px 300px 400px 100px;
+     grid-template-rows: 70px 70px 500px 300px 600px 100px;
      gap: 0px 0px;
      grid-template-areas:
      "he he"
@@ -131,16 +130,39 @@ body {
 }   
 
 #section_2_index {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas:
+     "meny1 meny2" ;
      grid-area: se2;
      background-color: rgb(211, 210, 210);
      margin: 10px;
      border-radius: 10px;
      padding: 10px;
+     height: 600px;
 }
 
-#section_2_index p {
-     font-size: 20px;
+#meny1 {
+     grid-area: meny1;
 }
+
+#meny2 {
+     grid-area: meny2;
+}
+
+#meny1 li {
+     font-size: 25px;
+     text-decoration: none;
+     list-style-type: none;
+     padding: px;
+}
+
+#meny2 li{
+     font-size: 25px;
+     text-decoration: none;
+     list-style-type: none;
+}
+
 
 /* Styling för "Bilder" sidan med CSS grid */
 #grid_wrapper_bilder {
