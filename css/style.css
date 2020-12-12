@@ -61,6 +61,14 @@ body {
      grid-area: se1; 
 }
 
+.se2 {
+     grid-area: se2;
+}
+
+.se3 {
+     grid-area: se3;
+}
+
 .ul_taggar {
      display: flex;
      height: 100%;
@@ -103,38 +111,44 @@ body {
      grid-template-areas:
      "he he"
      "na na"
-     "se1 se1"
+     "se1 se2"
      "ma as"
-     "se2 se2"
+     "se3 se3"
      "fo fo";
    }
 
 #section_1_bild_index {
      height: 480px;
-     width: 97%;
      margin: 14px;
      border-radius: 10px;
 }
 
+#section_2_bild_index {
+     height: 480px;
+     width: 480px; 
+     margin: 14px; 
+     border-radius: 10px; 
+}
+
 #main_index {
      background-color:rgb(211, 210, 210);
-     margin: 10px;
+     margin: 14px;
      border-radius: 10px;
 }   
 
 #aside_index {
      background-color:rgb(211, 210, 210);
-     margin: 10px;
+     margin: 14px;
      border-radius: 10px;
      padding: 10px;
 }   
 
-#section_2_index {
+#section_3_index {
+     grid-area: se3;
      display: grid;
      grid-template-columns: 1fr 1fr;
      grid-template-areas:
-     "meny1 meny2" ;
-     grid-area: se2;
+     "meny1 meny2";
      background-color: rgb(211, 210, 210);
      margin: 10px;
      border-radius: 10px;
@@ -254,7 +268,7 @@ body {
 #grid_wrapper_kontakt {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 70px 70px 850px 100px;
+     grid-template-rows: 70px 70px 800px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
