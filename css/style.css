@@ -5,7 +5,7 @@
 }
 
 body {
-     background-image: url("https://t4.ftcdn.net/jpg/02/52/16/95/240_F_252169566_0hYhfxzUzQYDYgh231YdAhQDkN9ckdGa.jpg");
+     background-color: black;
 }
 
 .he { 
@@ -81,7 +81,6 @@ body {
 /* Styling för footern */
 .fo { 
      grid-area: fo;
-     background-image: url("https://t4.ftcdn.net/jpg/02/52/16/95/240_F_252169566_0hYhfxzUzQYDYgh231YdAhQDkN9ckdGa.jpg");
      background-repeat: repeat-x;
      display: flex;
      height: 100%;
@@ -106,7 +105,7 @@ body {
 #grid_wrapper_index {
      display: grid;
      grid-template-columns: 1fr 0.5fr;
-     grid-template-rows: 70px 70px 500px 300px 600px 100px;
+     grid-template-rows: 70px 70px 500px 350px 600px 100px;
      gap: 0px 0px;
      grid-template-areas:
      "he he"
@@ -143,6 +142,16 @@ body {
      padding: 10px;
 }   
 
+#aside_index #opening_times {
+     font-size: 24px;
+}
+
+#aside_index p {
+     font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: bold;
+}
+
 #section_3_index {
      grid-area: se3;
      display: grid;
@@ -154,6 +163,25 @@ body {
      border-radius: 10px;
      padding: 10px;
      height: 600px;
+}
+
+#section_3_index #menynamn {
+     font-weight: bold;
+}
+
+#section_3_index #pris {
+     font-size: 23px; 
+     color: rgb(12, 12, 12);
+}
+
+#section_3_index #ingredienser {
+     font-size: 23px; 
+     color: rgb(27, 27, 27);
+}
+
+#section_3_index hr {
+     border: 1.5px dashed black; 
+     width: 40%;
 }
 
 #meny1 {
@@ -168,7 +196,6 @@ body {
      font-size: 25px;
      text-decoration: none;
      list-style-type: none;
-     padding: px;
 }
 
 #meny2 li{
@@ -182,7 +209,7 @@ body {
 #grid_wrapper_bilder {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 70px 70px 900px 100px;
+     grid-template-rows: 70px 70px 600px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
@@ -197,12 +224,8 @@ body {
      margin: 10px 40px 10px 40px;
      border-radius: 10px;
      flex-wrap: wrap;
+     justify-content: space-evenly;
 }  
-
-#flex_child {
-     
-
-}
 
 /* Styling för "Om oss" sidan med CSS */
 
