@@ -13,8 +13,12 @@ body {
      background-color: rgb(1, 32, 44);
      color: white;
      font-family: sans-serif;
-     padding-top: 15px;        
      text-align: center;
+}
+
+.he2 {
+     grid-area: he2;
+     background-color: rgb(1, 32, 44);
 }
 
 /* Styling för navigationsystemet */
@@ -105,7 +109,7 @@ body {
 #grid_wrapper_index {
      display: grid;
      grid-template-columns: 1fr 0.5fr;
-     grid-template-rows: 70px 70px 500px 350px 600px 100px;
+     grid-template-rows: 110px 70px 500px 350px 600px 100px;
      gap: 0px 0px;
      grid-template-areas:
      "he he"
@@ -114,7 +118,29 @@ body {
      "ma as"
      "se3 se3"
      "fo fo";
-   }
+}
+
+#he_index_flex_parent {
+     display: flex;
+}
+
+#logo_index {
+     height: 100px; 
+     width: 100px;  
+     margin-left: 10px;
+     margin-top: 5px;
+     background-color: rgb(1, 32, 44);
+     border-radius: 20px;
+}
+
+#restaurangtitel_index {
+     background-color: rgb(1, 32, 44);
+     color: white;
+     font-family: sans-serif;
+     font-size: 40px;
+     margin-left: 380px;
+     margin-top: 35px;
+}
 
 #section_1_bild_index {
      height: 480px;
@@ -209,13 +235,35 @@ body {
 #grid_wrapper_bilder {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 70px 70px 600px 100px;
+     grid-template-rows: 110px 70px 600px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
        "na"
        "ar"
        "fo";
+}
+
+#he_bilder_flex_parent {
+     display: flex;
+}
+
+#logo_bilder {
+     height: 100px; 
+     width: 100px;  
+     margin-left: 10px;
+     margin-top: 5px;
+     background-color: rgb(1, 32, 44);
+     border-radius: 20px;
+}
+
+#restaurangtitel_bilder {
+     background-color: rgb(1, 32, 44);
+     color: white;
+     font-family: sans-serif;
+     font-size: 40px;
+     margin-left: 450px;
+     margin-top: 35px;
 }
 
 #flex_parent_bilder {
@@ -232,14 +280,36 @@ body {
 #grid_wrapper_om_oss {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 70px 70px 900px 100px;
+     grid-template-rows: 110px 70px 900px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
        "na"
        "ar"
        "fo";
-   }
+}
+
+#he_om_oss_flex_parent {
+     display: flex;
+}
+
+#logo_om_oss {
+     height: 100px; 
+     width: 100px;  
+     margin-left: 10px;
+     margin-top: 5px;
+     background-color: rgb(1, 32, 44);
+     border-radius: 20px;
+}
+
+#restaurangtitel_om_oss {
+     background-color: rgb(1, 32, 44);
+     color: white;
+     font-family: sans-serif;
+     font-size: 40px;
+     margin-left: 420px;
+     margin-top: 35px;
+}
 
 #article_om_oss {
      background-color: rgb(99, 98, 98);
@@ -260,14 +330,37 @@ body {
 #grid_wrapper_help {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 70px 70px 930px 100px;
+     grid-template-rows: 110px 70px 930px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
        "na"
        "ar"
        "fo";
-   }
+}
+
+#he_help_flex_parent {
+     display: flex;
+}
+
+#logo_help {
+     height: 100px; 
+     width: 100px;  
+     margin-left: 10px;
+     margin-top: 5px;
+     background-color: rgb(1, 32, 44);
+     border-radius: 20px;
+}
+
+#restaurangtitel_help {
+     background-color: rgb(1, 32, 44);
+     color: white;
+     font-family: sans-serif;
+     font-size: 40px;
+     margin-left: 400px;
+     margin-top: 35px;
+}
+
 
 #help-survey {
      height: 700px;
@@ -291,17 +384,39 @@ body {
 #grid_wrapper_kontakt {
      display: grid;
      grid-template-columns: 1fr;
-     grid-template-rows: 70px 70px 800px 100px;
+     grid-template-rows: 110px 70px 800px 100px;
      gap: 0px 0px;
      grid-template-areas:
        "he"
        "na"
        "ar"
        "fo";
-   }
+}
+
+#he_kontakt_flex_parent {
+     display: flex;
+}
+
+#logo_kontakt {
+     height: 100px; 
+     width: 100px;  
+     margin-left: 10px;
+     margin-top: 5px;
+     background-color: rgb(1, 32, 44);
+     border-radius: 20px;
+}
+
+#restaurangtitel_kontakt {
+     background-color: rgb(1, 32, 44);
+     color: white;
+     font-family: sans-serif;
+     font-size: 40px;
+     margin-left: 400px;
+     margin-top: 35px;
+}
 
 #article_kontakt {
-     background-color: white;
+     background-color: rgb(194, 194, 194);
      margin: 10px 40px 10px 40px;
      border-radius: 10px;
      padding: 10px;
